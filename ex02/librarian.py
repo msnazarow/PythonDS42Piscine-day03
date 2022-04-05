@@ -3,7 +3,7 @@ import os
 
 
 def main():
-    if os.environ['VIRTUAL_ENV'][-8:] == 'sgertrud':
+    if os.environ['VIRTUAL_ENV'].endswith('sgertrud'):
         os.system("pip install beautifulsoup4 pytest")
         os.system("pip freeze > requirements.txt")
         os.system("cat requirements.txt")
