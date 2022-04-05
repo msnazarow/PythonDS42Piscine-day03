@@ -11,7 +11,7 @@ def main(args):
     ticker, table_field = args[1], args[2]
     url = f"https://finance.yahoo.com/quote/{ticker.lower()}/financials"
     resp = requests.get(url, headers={'User-Agent': 'sgertrud'})
-    if not resp.ok:
+    if not resp.ok or resp.url != url:
         raise ConnectionError("No result found")
     soap = BeautifulSoup(resp.text, 'html.parser')
     rows = soap.findAll('div', {'data-test': "fin-row"})

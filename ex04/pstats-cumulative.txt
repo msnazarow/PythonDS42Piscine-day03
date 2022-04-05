@@ -1,0 +1,15 @@
+Tue Apr  5 14:57:47 2022    output.profile
+
+         604666 function calls (587404 primitive calls) in 1.165 seconds
+
+   Ordered by: cumulative time
+   List reduced from 2403 to 5 due to restriction <5>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+    218/1    0.002    0.000    1.166    1.166 {built-in method builtins.exec}
+        1    0.000    0.000    1.166    1.166 ./financial_enhanced.py:2(<module>)
+        1    0.000    0.000    0.878    0.878 /Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/asyncio/base_events.py:580(run_until_complete)
+        1    0.000    0.000    0.878    0.878 /Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/asyncio/base_events.py:557(run_forever)
+       58    0.001    0.000    0.878    0.015 /Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/asyncio/base_events.py:1784(_run_once)
+
+
